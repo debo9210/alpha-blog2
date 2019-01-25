@@ -17,6 +17,7 @@ def create
   session[:user_id]
    flash[:success] = "Welcome to the alpha blog #{@user.username}"
    redirect_to user_path(@user)
+ 
    
  else
    render 'new'
